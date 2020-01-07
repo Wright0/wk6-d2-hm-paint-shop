@@ -1,5 +1,5 @@
 const assert = require('assert')
-const paintCan = require('../paint_can.js')
+const PaintCan = require('../paint_can.js')
 
 describe('PaintCan', function(){
 
@@ -8,12 +8,12 @@ describe('PaintCan', function(){
 
   beforeEach(function (){
     paintCan1 = new PaintCan(2);
-    paint2 = new Paint(0);
+    paintCan2 = new PaintCan(0);
   })
 
   it('has paint', function(){
       const expected = false;
-      const actual = paint1.checkIfEmpty();
+      const actual = paintCan1.checkIfEmpty();
     assert.strictEqual(actual, expected);
   })
 
