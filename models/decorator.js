@@ -32,5 +32,4 @@ Decorator.prototype.paintRoom = function(room){
   }
 };
 
-
 module.exports = Decorator;
