@@ -17,6 +17,9 @@ describe('Room', function(){
   })
 
   it('should be able to be painted', function(){
-
+    room1.paintRoom(6);
+    actual = room1.paintedArea;
+    expected = 6;
+    assert.strictEqual(actual, expected);
   })
 });
