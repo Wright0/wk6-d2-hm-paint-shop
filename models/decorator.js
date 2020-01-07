@@ -15,5 +15,22 @@ Decorator.prototype.checkStockLitres = function(){
   return litres;
 };
 
+Decorator.prototype.hasEnoughPaint = function(room){
+  const litresAvailable = this.checkStockLitres();
+  if (room.areaInMeters <= litresAvailable) {
+    return true
+  } else {
+    return false
+  };
+};
+
+Decorator.prototype.paintRoom = function(room){
+  if (this.hasEnoughPaint(room) === true) {
+    room.paintedArea = room.areaInMeters;
+  } else {
+    return "NOT ENOUGH PAINT, FOOL!"
+  }
+};
+
 
 module.exports = Decorator;
