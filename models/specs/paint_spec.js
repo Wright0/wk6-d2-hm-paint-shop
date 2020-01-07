@@ -4,6 +4,7 @@ const Paint = require('../paint.js')
 describe('Paint', function(){
 
   let paint1;
+  let paint2;
 
   beforeEach(function (){
     paint1 = new Paint(2);
