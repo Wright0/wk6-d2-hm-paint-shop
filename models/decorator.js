@@ -16,12 +16,7 @@ Decorator.prototype.checkStockLitres = function(){
 };
 
 Decorator.prototype.hasEnoughPaint = function(room){
-  const litresAvailable = this.checkStockLitres();
-  if (room.areaInMeters <= litresAvailable) {
-    return true
-  } else {
-    return false
-  };
+  return (room.areaInMeters <= this.checkStockLitres();
 };
 
 Decorator.prototype.paintRoom = function(room){

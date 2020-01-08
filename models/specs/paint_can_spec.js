@@ -12,8 +12,8 @@ describe('PaintCan', function(){
   })
 
   it('has paint', function(){
-      const expected = false;
-      const actual = paintCan1.checkIfEmpty();
+    const expected = false;
+    const actual = paintCan1.checkIfEmpty();
     assert.strictEqual(actual, expected);
   })
 
